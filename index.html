@@ -6,16 +6,14 @@ title: Home
 <div class="home">
 
   <ul class="posts">
-    {% for post in paginator.posts %}
     <li>
-      <h1 >{{ post.title }}</h1>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-      {{ post.excerpt }}
+      <h1 >Ruby Shrestha</h1>
+      <span>January 17th, 2015</span>
+      Hello, I am Ruby. Just playing around with the new theme! Want to head on to some articles that I've written?
       <div class="continue">
-        <a href="{{ post.url | prepend: site.baseurl }}">&bull;&bull;&bull;</a>
+        <a href="http://dwitnews.com/author/ruby">Click here :)</a>
       </div>
     </li>
-    {% endfor %}
   </ul>
 
   <div class="pagination">
