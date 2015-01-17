@@ -8,30 +8,12 @@ title: Home
   <ul class="posts">
     <li>
       <h1 >Ruby Shrestha</h1>
-      <span>January 17th, 2015</span>
-      Hello, I am Ruby. Just playing around with the new theme! Want to head on to some articles that I've written?
+      <span>January 17th, 2015</span>&nbsp;&nbsp;
+      Hello, I am Ruby. Just playing around with the new theme downloaded from <a href="http://jekyllthemes.org/">Jekyll Themes!</a> Anyways, want to head on to some articles that I've written?
       <div class="continue">
         <a href="http://dwitnews.com/author/ruby">Click here :)</a>
       </div>
     </li>
   </ul>
-
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      {% if page == 2 %}
-        <a class="page-link" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">prv</a>
-      {% else %}
-        <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">prv</a>
-      {% endif %}
-    {% else %}
-      <span class="page-link">prv</span>
-    {% endif %}
-
-    {% if paginator.next_page %}
-      <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">nxt</a>
-    {% else %}
-      <span class="page-link">nxt</span>
-    {% endif %}
-  </div>
 
 </div>
